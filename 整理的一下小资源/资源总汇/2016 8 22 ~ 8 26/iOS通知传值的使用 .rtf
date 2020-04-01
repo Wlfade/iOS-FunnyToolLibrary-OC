@@ -1,0 +1,157 @@
+{\rtf1\ansi\ansicpg936\cocoartf1404\cocoasubrtf460
+{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fnil\fcharset134 STSongti-SC-Regular;\f2\fnil\fcharset0 Verdana;
+\f3\fnil\fcharset134 PingFangSC-Regular;\f4\fnil\fcharset0 HelveticaNeue;\f5\fnil\fcharset0 Menlo-Regular;
+\f6\fnil\fcharset0 LucidaGrande;\f7\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red40\green121\blue127;\red38\green48\blue38;\red170\green12\blue145;
+\red15\green116\blue1;\red92\green38\blue153;\red46\green13\blue110;\red63\green110\blue116;\red196\green26\blue22;
+\red38\green38\blue38;\red180\green0\blue98;\red29\green133\blue25;\red77\green0\blue158;\red186\green0\blue17;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww22140\viewh11100\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs36 \cf2 \expnd0\expndtw0\kerning0
+iOS
+\f1 \'cd\'a8\'d6\'aa\'b4\'ab\'d6\'b5\'b5\'c4\'ca\'b9\'d3\'c3
+\f2\fs24 \cf3  \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs28 \cf3 \'cd\'a8\'d6\'aa
+\f4  
+\f3 \'ca\'c7\'d4\'da\'cc\'f8\'d7\'aa\'bf\'d8\'d6\'c6\'c6\'f7\'d6\'ae\'bc\'e4\'b3\'a3\'d3\'c3\'b5\'c4\'b4\'ab\'d6\'b5\'b4\'fa\'c0\'ed\'b7\'bd\'ca\'bd\'a3\'ac\'b3\'fd\'c1\'cb\'b4\'fa\'c0\'ed\'c4\'a3\'ca\'bd\'a3\'ac\'cd\'a8\'d6\'aa\'b8\'fc\'b7\'bd\'b1\'e3\'a1\'a2\'b1\'e3\'bd\'dd\'a3\'ac\'d2\'bb\'b8\'f6\'bc\'f2\'b5\'a5\'b5\'c4
+\f4 Demo
+\f3 \'ca\'b5\'cf\'d6\'cd\'a8\'d6\'aa\'b5\'c4\'cc\'f8\'d7\'aa\'b4\'ab\'d6\'b5
+\f4 .\
+\
+
+\f3 \'ca\'e4\'c8\'eb\'cb\'f9\'d2\'aa\'b7\'a2\'cb\'cd\'b5\'c4\'d0\'c5\'cf\'a2
+\f4  
+\f3 \'a3\'ac\'cd\'ac\'ca\'b1\'bd\'ab
+\f4 label
+\f3 \'b5\'c4\'d6\'b5\'cd\'a8\'b9\'fd
+\f4 button
+\f3 \'b7\'bd\'b7\'a8\'b5\'f7\'d3\'c3\'b4\'ab\'b5\'dd\'a3\'ac
+\f4 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\fs22 \cf3 - (\cf4 IBAction\cf3 )buttonClick:(\cf4 id\cf3 )sender \{\
+\pard\pardeftab720\partightenfactor0
+\cf5 \'a0 \'a0 //
+\f1 \'cc\'ed\'bc\'d3
+\f5  
+\f1 \'d7\'d6\'b5\'e4\'a3\'ac\'bd\'ab
+\f5 label
+\f1 \'b5\'c4\'d6\'b5\'cd\'a8\'b9\'fd
+\f5 key
+\f1 \'d6\'b5\'c9\'e8\'d6\'c3\'b4\'ab\'b5\'dd
+\f5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \'a0 \'a0 NSDictionary *dict =[[NSDictionary \cf7 alloc\cf6 ] \cf7 initWithObjectsAndKeys\cf6 :\cf4 self\cf6 .\cf8 textFieldOne\cf6 .text,\cf9 @"textOne"\cf6 ,\cf4 self\cf6 .\cf8 textFieldTwo\cf6 .text,\cf9 @"textTwo"\cf6 , \cf4 nil\cf6 ];\
+\pard\pardeftab720\partightenfactor0
+\cf5 \'a0 \'a0 //
+\f1 \'b4\'b4\'bd\'a8\'cd\'a8\'d6\'aa
+\f5 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \'a0 \'a0 \cf6 NSNotification\cf7  *notification =[\cf6 NSNotification\cf7  notificationWithName:\cf9 @"tongzhi"\cf7  object:\cf4 nil\cf7  userInfo:dict];\
+\pard\pardeftab720\partightenfactor0
+\cf5 \'a0 \'a0
+\f0  
+\f5 //
+\f1 \'cd\'a8\'b9\'fd\'cd\'a8\'d6\'aa\'d6\'d0\'d0\'c4\'b7\'a2\'cb\'cd\'cd\'a8\'d6\'aa
+\f0 \
+\pard\pardeftab720\partightenfactor0
+
+\f5 \cf7 \'a0 \'a0 [[\cf6 NSNotificationCenter\cf7  defaultCenter] postNotification:notification];\
+\pard\pardeftab720\partightenfactor0
+\cf5 \'a0 \'a0 [\cf4 self\cf5 .\cf6 navigationController\cf5  \cf7 popViewControllerAnimated\cf5 :\cf4 YES\cf5 ];\
+\pard\pardeftab720\partightenfactor0
+\cf3 \'a0\
+\}\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs28 \cf3 \'d4\'da\'b7\'a2\'cb\'cd\'cd\'a8\'d6\'aa\'ba\'f3\'a3\'ac\'d4\'da\'cb\'f9\'d2\'aa\'bd\'d3\'ca\'d5\'b5\'c4\'bf\'d8\'d6\'c6\'c6\'f7\'d6\'d0\'d7\'a2\'b2\'e1\'cd\'a8\'d6\'aa\'bc\'e0\'cc\'fd\'d5\'df\'a3\'ac\'bd\'ab\'cd\'a8\'d6\'aa\'b7\'a2\'cb\'cd\'b5\'c4\'d0\'c5\'cf\'a2\'bd\'d3\'ca\'d5
+\f5 \
+\pard\pardeftab720\partightenfactor0
+
+\fs22 \cf3 - (\cf4 void\cf3 )viewDidLoad \{\
+\pard\pardeftab720\partightenfactor0
+\cf7 \'a0 \'a0 [\cf4 super\cf7  viewDidLoad];\
+\pard\pardeftab720\partightenfactor0
+\cf5 \'a0 \'a0\'a0//
+\f3 \'d7\'a2\'b2\'e1\'cd\'a8\'d6\'aa
+\f5 \
+\'a0 \'a0 [[\cf6 NSNotificationCenter\cf5  \cf7 defaultCenter\cf5 ] \cf7 addObserver\cf5 :\cf4 self\cf5  \cf7 selector\cf5 :\cf4 @selector\cf5 (tongzhi:) \cf7 name\cf5 :\cf9 @"tongzhi"\cf5  \cf7 object\cf5 :\cf4 nil\cf5 ];\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf3 \'a0\
+\pard\pardeftab720\partightenfactor0
+
+\fs22 \cf3 \}\
+- (\cf4 void\cf3 )tongzhi:(\cf6 NSNotification\cf3  *)text\{\
+\'a0 \'a0 \cf7 NSLog\cf3 (\cf9 @"%@"\cf3 ,text.\cf6 userInfo\cf3 [\cf9 @"textOne"\cf3 ]);\
+\pard\pardeftab720\partightenfactor0
+\cf9 \'a0 \'a0 \'a0 \'a0\'a0\cf7 NSLog\cf9 (@"
+\f1 \'a3\'ad\'a3\'ad\'a3\'ad\'a3\'ad\'a3\'ad\'bd\'d3\'ca\'d5\'b5\'bd\'cd\'a8\'d6\'aa
+\f5 ------");\
+\pard\pardeftab720\partightenfactor0
+\cf3 \'a0\
+\}\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs28 \cf10 \'d2\'c6\'b3\'fd\'cd\'a8\'d6\'aa\'a3\'ba
+\f6 removeObserver:
+\f3 \'ba\'cd
+\f6 removeObserver:name:object:
+\f7 \
+
+\f3 \'c6\'e4\'d6\'d0\'a3\'ac
+\f6 removeObserver:
+\f3 \'ca\'c7\'c9\'be\'b3\'fd\'cd\'a8\'d6\'aa\'d6\'d0\'d0\'c4\'b1\'a3\'b4\'e6\'b5\'c4\'b5\'f7\'b6\'c8\'b1\'ed\'d2\'bb\'b8\'f6\'b9\'db\'b2\'ec\'d5\'df\'b5\'c4\'cb\'f9\'d3\'d0\'c8\'eb\'bf\'da\'a3\'ac\'b6\'f8
+\f6 removeObserver:name:object:
+\f3 \'ca\'c7\'c9\'be\'b3\'fd\'c6\'a5\'c5\'e4\'c1\'cb\'cd\'a8\'d6\'aa\'d6\'d0\'d0\'c4\'b1\'a3\'b4\'e6\'b5\'c4\'b5\'f7\'b6\'c8\'b1\'ed\'d6\'d0\'b9\'db\'b2\'ec\'d5\'df\'b5\'c4\'d2\'bb\'b8\'f6\'c8\'eb\'bf\'da\'a1\'a3
+\f7 \
+
+\f3 \'d5\'e2\'b8\'f6\'b1\'c8\'bd\'cf\'bc\'f2\'b5\'a5\'a3\'ac\'d6\'b1\'bd\'d3\'b5\'f7\'d3\'c3\'b8\'c3\'b7\'bd\'b7\'a8\'be\'cd\'d0\'d0\'a1\'a3\'c0\'fd\'c8\'e7\'a3\'ba
+\f7 \
+[[NSNotificationCenter defaultCenter] removeObserver:observer name:nil object:self];\
+
+\f3 \'d7\'a2\'d2\'e2\'b2\'ce\'ca\'fd
+\f6 notificationObserver
+\f3 \'ce\'aa\'d2\'aa\'c9\'be\'b3\'fd\'b5\'c4\'b9\'db\'b2\'ec\'d5\'df\'a3\'ac\'d2\'bb\'b6\'a8\'b2\'bb\'c4\'dc\'d6\'c3\'ce\'aa
+\f6 nil
+\f3 \'a1\'a3\
+\
+\pard\tx866\pardeftab866\pardirnatural\partightenfactor0
+
+\f5\fs36 \cf0 \kerning1\expnd0\expndtw0 \CocoaLigature0 - (\cf11 void\cf0 )dealloc\{\
+    \cf12 //
+\f3 \'d2\'c6\'b3\'fd\'cd\'a8\'d6\'aa
+\f5 \cf0 \
+    \cf12 //    [super dealloc];\cf0 \
+    [[\cf13 NSNotificationCenter\cf0  \cf7 defaultCenter\cf0 ]\cf7 removeObserver\cf0 :\cf11 self\cf0  \cf7 name\cf0 :\cf14 @"tongzhi"\cf0  \cf7 object\cf0 :\cf11 nil\cf0 ];\
+    [[\cf13 NSNotificationCenter\cf0  \cf7 defaultCenter\cf0 ]\cf7 removeObserver\cf0 :\cf11 self\cf0  \cf7 name\cf0 :\cf14 @"pushToDetail"\cf0  \cf7 object\cf0 :\cf11 nil\cf0 ];\
+    [[\cf13 NSNotificationCenter\cf0  \cf7 defaultCenter\cf0 ]\cf7 removeObserver\cf0 :\cf11 self\cf0  \cf7 name\cf0 :\cf14 @"pushToUserInfor"\cf0  \cf7 object\cf0 :\cf11 nil\cf0 ];\
+\}\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs28 \cf10 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \'ce\'d2\'d4\'d9
+\f4 \cf10 viewDidLoad
+\f3 \cf10 \'c0\'ef\'cc\'ed\'bc\'d3\'c1\'cb\'b9\'db\'b2\'ec\'d5\'df
+\f4 \cf10 \
+\'a0[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(play) name:Notification_Play object: nil];\
+\'a0\'a0\'a0 [[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(pausePlay) name:Notification_Pause object: nil];\
+
+\f3 \cf10 \'d4\'d9
+\f4 \cf10 dealloc
+\f3 \cf10 \'c0\'ef\'d2\'c6\'b3\'fd\'ca\'b1\'ba\'f2
+\f4 \cf10 \
+\'a0[[NSNotificationCenter defaultCenter] removeObserver:self];  
+\f3 \cf10 \'d2\'bb\'b4\'ce\'d0\'d4\'d2\'c6\'b3\'fd\'b8\'c3\'c0\'e0\'d6\'d0\'b5\'c4\'cb\'f9\'d3\'d0\'b5\'c4\'cd\'a8\'d6\'aa
+\f4 \cf10 \
+\
+\
+\
+\
+}

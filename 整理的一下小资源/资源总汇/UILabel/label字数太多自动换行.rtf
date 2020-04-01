@@ -1,0 +1,29 @@
+{\rtf1\ansi\ansicpg936\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset134 STHeitiSC-Light;}
+{\colortbl;\red255\green255\blue255;\red77\green0\blue158;\red46\green13\blue110;\red100\green56\blue32;
+\red0\green11\blue255;\red68\green137\blue147;\red92\green38\blue153;\red186\green0\blue17;\red48\green111\blue121;
+\red32\green60\blue63;\red180\green0\blue98;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab866
+\pard\tx866\pardeftab866\pardirnatural
+
+\f0\fs36 \cf0 \CocoaLigature0     \cf2 UILabel\cf0  *infoLabel = [[\cf2 UILabel\cf0  \cf3 alloc\cf0 ]\cf3 initWithFrame\cf0 :\cf3 CGRectMake\cf0 (\cf4 kScreenWidth\cf0  / \cf5 375\cf0  * \cf5 15\cf0 ,titleImage.\cf6 bottom\cf0  + \cf5 10\cf0 ,\cf4 kScreenWidth\cf0  / \cf5 375\cf0  * \cf5 345\cf0 ,\cf4 kScreenWidth\cf0  / \cf5 375\cf0  * \cf5 15\cf0 )];\
+    infoLabel.\cf7 text\cf0  = \cf8 @"       
+\f1 \'c9\'ee\'db\'da\'ca\'d0\'ba\'bd\'ca\'a2\'b5\'e7\'d7\'d3\'b9\'c9\'b7\'dd\'d3\'d0\'cf\'de\'b9\'ab\'cb\'be\'b3\'c9\'c1\'a2\'d3\'da
+\f0 1993
+\f1 \'c4\'ea\'a3\'ac\'ca\'c7\'d2\'bb\'bc\'d2\'bc\'af\'d1\'d0\'b7\'a2\'a1\'a2\'d6\'c6\'d4\'ec\'a1\'a2\'d3\'aa\'cf\'fa\'a1\'a2\'cf\'fa\'ca\'db\'b7\'fe\'ce\'f1\'d3\'da\'d2\'bb\'cc\'e5\'a3\'ac\'ce\'aa\'c6\'fb\'b3\'b5\'d5\'fb\'b3\'b5\'c6\'f3\'d2\'b5\'bf\'aa\'b7\'a2\'c9\'fa\'b2\'fa\'d6\'c7\'c4\'dc\'cd\'f8\'c1\'aa\'c6\'fb\'b3\'b5\'d0\'c5\'cf\'a2\'cf\'b5\'cd\'b3\'a1\'a2\'d6\'c7\'c4\'dc\'bc\'dd\'ca\'bb\'b8\'a8\'d6\'fa\'cf\'b5\'cd\'b3\'a1\'a2\'d0\'c2\'c4\'dc\'d4\'b4\'c6\'fb\'b3\'b5\'bf\'d8\'d6\'c6\'cf\'b5\'cd\'b3\'b5\'c8\'b2\'fa\'c6\'b7\'b5\'c4\'b8\'df\'d0\'c2\'bc\'bc\'ca\'f5\'c6\'f3\'d2\'b5\'a1\'a3
+\f0 "\cf0 ;\
+    infoLabel.\cf7 backgroundColor\cf0  = [\cf2 UIColor\cf0  \cf3 clearColor\cf0 ];\
+    infoLabel.\cf7 font\cf0  = [\cf2 UIFont\cf0  \cf3 systemFontOfSize\cf0 :\cf4 kScreenWidth\cf0  / \cf5 375\cf0  * \cf5 15\cf0 ];\
+    infoLabel.\cf7 textColor\cf0  = [\cf9 CommonTool\cf0  \cf10 getColor\cf0 :\cf8 @"747780"\cf0 ];\
+    infoLabel.\cf7 lineBreakMode\cf0  = \cf3 NSLineBreakByWordWrapping\cf0 ;\
+    infoLabel.\cf7 numberOfLines\cf0  = \cf5 0\cf0 ;\
+    \
+    \cf7 CGRect\cf0  infoTxtFrame = infoLabel.\cf7 frame\cf0 ;\
+    infoTxtFrame.\cf7 size\cf0 .\cf7 height\cf0  = [infoLabel.\cf7 text\cf0  \cf3 boundingRectWithSize\cf0 :\
+                            \cf3 CGSizeMake\cf0 (infoTxtFrame.\cf7 size\cf0 .\cf7 width\cf0 , \cf4 CGFLOAT_MAX\cf0 )\
+                                                    \cf3 options\cf0 :\cf3 NSStringDrawingUsesLineFragmentOrigin\cf0  | \cf3 NSStringDrawingUsesFontLeading\cf0 \
+                                                 \cf3 attributes\cf0 :[\cf2 NSDictionary\cf0  \cf3 dictionaryWithObjectsAndKeys\cf0 :infoLabel.\cf7 font\cf0 ,\cf7 NSFontAttributeName\cf0 , \cf11 nil\cf0 ] \cf3 context\cf0 :\cf11 nil\cf0 ].\cf7 size\cf0 .\cf7 height\cf0 ;\
+    infoLabel.\cf7 frame\cf0  = \cf3 CGRectMake\cf0 (\cf4 kScreenWidth\cf0  / \cf5 375\cf0  * \cf5 15\cf0 ,titleImage.\cf6 bottom\cf0  + \cf5 10\cf0 ,\cf4 kScreenWidth\cf0  / \cf5 375\cf0  * \cf5 345\cf0 , infoTxtFrame.\cf7 size\cf0 .\cf7 height\cf0 );\
+    [\cf11 self\cf0 .\cf7 view\cf0  \cf3 addSubview\cf0 :infoLabel];\
+}

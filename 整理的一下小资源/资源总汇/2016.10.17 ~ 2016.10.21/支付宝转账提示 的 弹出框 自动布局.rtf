@@ -1,0 +1,134 @@
+{\rtf1\ansi\ansicpg936\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset134 PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red180\green0\blue98;\red29\green133\blue25;\red0\green0\blue0;
+\red46\green13\blue110;\red77\green0\blue158;\red92\green38\blue153;\red32\green60\blue63;\red110\green32\blue13;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18960\viewh15680\viewkind0
+\deftab890
+\pard\tx890\pardeftab890\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 \CocoaLigature0 \
+
+\f1 .h 
+\f0 \
+- (\cf2 instancetype\cf0 )initWithTransAcountTip;\
+\cf3 \
+\cf4 .m\cf3 \
+//
+\f1 \'d7\'aa\'d5\'cb\'b5\'bd\'d6\'a7\'b8\'b6\'b1\'a6\'cc\'e1\'ca\'be\'b5\'af\'b3\'f6\'bf\'f2
+\f0 \cf0 \
+- (\cf2 instancetype\cf0 )initWithTransAcountTip\{\
+    \cf2 self\cf0  = [\cf2 self\cf0  \cf5 initWithFrame\cf0 :[\cf6 UIScreen\cf0  \cf5 mainScreen\cf0 ].\cf7 bounds\cf0 ];\
+    \cf2 if\cf0  (\cf2 self\cf0 ) \{\
+        [\cf2 self\cf0  \cf8 _creatSubView\cf0 ];\
+        [\cf2 self\cf0  \cf8 _creatTransAcountTip\cf0 ];\
+    \}\
+    \cf2 return\cf0  \cf2 self\cf0 ;\
+\}\cf9 \
+\
+#pragma mark 
+\f1 \'d6\'a7\'b8\'b6\'b1\'a6\'d7\'aa\'d5\'cb\'cc\'e1\'ca\'be\'b5\'af\'b3\'f6\'bf\'f2\'d7\'d4\'bc\'ba\'d0\'b4\'cb\'c0\'b5\'c4
+\f0 \
+\cf3 //- (void)_creatTransAcountTip\{\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    destView.frame = CGRectMake(0, 0, WIDTH*283, HEIGHT*168);\cf0 \
+\cf3 //    destView.center = self.center;\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    UILabel *tipLabel = [[UILabel alloc]init];\cf0 \
+\cf3 //    tipLabel.text = @"
+\f1 \'cc\'e1\'ca\'be
+\f0 ";\cf0 \
+\cf3 //    tipLabel.textAlignment = NSTextAlignmentCenter;\cf0 \
+\cf3 //    tipLabel.font = [UIFont systemFontOfSize:HEIGHT * 15];\cf0 \
+\cf3 //    tipLabel.textColor = [self getColor:@"666666"];\cf0 \
+\cf3 //    [destView addSubview:tipLabel];\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    UIView *firstLineView = [[UIView alloc]init];\cf0 \
+\cf3 //    firstLineView.backgroundColor = [self getColor:@"EFEFEF"];\cf0 \
+\cf3 //    [destView addSubview:firstLineView];\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    CGFloat labelFont = WIDTH *17;\cf0 \
+\cf3 //    UILabel *firstTipLabel = [[UILabel alloc]init];\cf0 \
+\cf3 //    firstTipLabel.text = @"
+\f1 \'d6\'a7\'b8\'b6\'b1\'a6\'d7\'aa\'d5\'cb\'ca\'b1
+\f0 ";\cf0 \
+\cf3 //    firstTipLabel.textColor = [self getColor:@"f63f3f"];\cf0 \
+\cf3 //    firstTipLabel.font = [UIFont systemFontOfSize:labelFont];\cf0 \
+\cf3 //    [destView addSubview:firstTipLabel];\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    NSMutableAttributedString *secondTipStr = [[NSMutableAttributedString alloc]initWithString:@"[
+\f1 \'b1\'b8\'d7\'a2\'b4\'a6
+\f0 ]
+\f1 \'b1\'d8\'d0\'eb\'ca\'e4\'c8\'eb\'b5\'b1\'c7\'b0\'b5\'c7\'c2\'bc\'ca\'d6\'bb\'fa\'ba\'c5
+\f0 "];\cf0 \
+\cf3 //    [secondTipStr addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:labelFont] range:NSMakeRange(0, secondTipStr.length)];\cf0 \
+\cf3 //    [secondTipStr addAttribute:NSForegroundColorAttributeName value:[self getColor:@"f63f3f"] range:NSMakeRange(0, secondTipStr.length)];\cf0 \
+\cf3 //    [secondTipStr addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"Verdana-Bold" size:labelFont] range:NSMakeRange(0, 5)];\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    UILabel *secondTipLabel = [[UILabel alloc]init];\cf0 \
+\cf3 //    secondTipLabel.attributedText = secondTipStr;\cf0 \
+\cf3 //    [destView addSubview:secondTipLabel];\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    UILabel *thirdTipLabel = [[UILabel alloc]init];\cf0 \
+\cf3 //    thirdTipLabel.text = @"
+\f1 \'b7\'f1\'d4\'f2\'d7\'aa\'d5\'cb\'ca\'a7\'b0\'dc\'a3\'a1
+\f0 ";\cf0 \
+\cf3 //    thirdTipLabel.textColor = [self getColor:@"666666"];\cf0 \
+\cf3 //    thirdTipLabel.font = [UIFont systemFontOfSize:labelFont];\cf0 \
+\cf3 //    [destView addSubview: thirdTipLabel];\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    UIView *secondLineView = [[UIView alloc]init];\cf0 \
+\cf3 //    secondLineView.backgroundColor = [self getColor:@"EFEFEF"];\cf0 \
+\cf3 //    [destView addSubview:secondLineView];\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    UIButton *clickBtn = [UIButton buttonWithType:UIButtonTypeCustom];\cf0 \
+\cf3 //    [clickBtn setTitle:@"
+\f1 \'c8\'b7\'b6\'a8
+\f0 " forState:UIControlStateNormal];\cf0 \
+\cf3 //    [clickBtn setTitleColor:[self getColor:@"333333"] forState:UIControlStateNormal];\cf0 \
+\cf3 //    clickBtn.titleLabel.font = [UIFont systemFontOfSize:HEIGHT*19];\cf0 \
+\cf3 //    [clickBtn addTarget:self action:@selector(clickAction) forControlEvents:UIControlEventTouchUpInside];\cf0 \
+\cf3 //    [destView addSubview:clickBtn];\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    tipLabel.translatesAutoresizingMaskIntoConstraints = NO;\cf0 \
+\cf3 //    firstLineView.translatesAutoresizingMaskIntoConstraints = NO;\cf0 \
+\cf3 //    firstTipLabel.translatesAutoresizingMaskIntoConstraints = NO;\cf0 \
+\cf3 //    secondTipLabel.translatesAutoresizingMaskIntoConstraints = NO;\cf0 \
+\cf3 //    thirdTipLabel.translatesAutoresizingMaskIntoConstraints = NO;\cf0 \
+\cf3 //    secondLineView.translatesAutoresizingMaskIntoConstraints = NO;\cf0 \
+\cf3 //    clickBtn.translatesAutoresizingMaskIntoConstraints = NO;\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    NSArray* tipHArray = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[tipLabel]-0-|" options:0 metrics:nil views:@\{@"tipLabel": tipLabel\}];\cf0 \
+\cf3 //    [NSLayoutConstraint activateConstraints:tipHArray];\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    NSArray* firLineHArray = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[firstLineView]-0-|" options:0 metrics:nil views:@\{@"firstLineView": firstLineView\}];\cf0 \
+\cf3 //    [NSLayoutConstraint activateConstraints:firLineHArray];\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    NSArray* firTipHArray = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[firstTipLabel]-10-|" options:0 metrics:nil views:@\{@"firstTipLabel": firstTipLabel\}];\cf0 \
+\cf3 //    [NSLayoutConstraint activateConstraints:firTipHArray];\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    NSArray* secTipHArray = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[secondTipLabel]-10-|" options:0 metrics:nil views:@\{@"secondTipLabel": secondTipLabel\}];\cf0 \
+\cf3 //    [NSLayoutConstraint activateConstraints:secTipHArray];\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    NSArray* thiTipHArray = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[thirdTipLabel]-10-|" options:0 metrics:nil views:@\{@"thirdTipLabel": thirdTipLabel\}];\cf0 \
+\cf3 //    [NSLayoutConstraint activateConstraints:thiTipHArray];\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    NSArray* secLineHArray = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[secondLineView]-0-|" options:0 metrics:nil views:@\{@"secondLineView": secondLineView\}];\cf0 \
+\cf3 //    [NSLayoutConstraint activateConstraints:secLineHArray];\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    NSArray* cliBtnHArray = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[clickBtn]-0-|" options:0 metrics:nil views:@\{@"clickBtn": clickBtn\}];\cf0 \
+\cf3 //    [NSLayoutConstraint activateConstraints:cliBtnHArray];\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    NSNumber *tipLabelHeigh = @(HEIGHT * 30);\cf0 \
+\cf3 //    NSNumber *lineHeigh = @(HEIGHT * 1);\cf0 \
+\cf3 //    NSNumber *labelHeigh = @(HEIGHT * 27);\cf0 \
+\cf3 //    NSNumber *clickBtnHeigh = @(HEIGHT * 37);\cf0 \
+\cf3 //    NSNumber *margin = @(HEIGHT * 9);\cf0 \
+\cf3 //    \cf0 \
+\cf3 //    NSString *seVfl = @"V:|[tipLabel(tipLabelHeigh)][firstLineView(lineHeigh)]-margin-[firstTipLabel(labelHeigh)][secondTipLabel(==firstTipLabel)][thirdTipLabel(==firstTipLabel)]-margin-[secondLineView(==firstLineView)][clickBtn(clickBtnHeigh)]|";\cf0 \
+\cf3 //    NSDictionary *seVmetrics = NSDictionaryOfVariableBindings(tipLabelHeigh,lineHeigh,labelHeigh,clickBtnHeigh,margin);\cf0 \
+\cf3 //    NSDictionary *seVView = NSDictionaryOfVariableBindings(tipLabel,firstLineView,firstTipLabel,secondTipLabel,thirdTipLabel,secondLineView,clickBtn);\cf0 \
+\cf3 //    NSArray *seVconstraints = [NSLayoutConstraint constraintsWithVisualFormat:seVfl options:0 metrics:seVmetrics views:seVView];\cf0 \
+\cf3 //    [NSLayoutConstraint activateConstraints:seVconstraints];\cf0 \
+\cf3 //\}\cf0 \
+}

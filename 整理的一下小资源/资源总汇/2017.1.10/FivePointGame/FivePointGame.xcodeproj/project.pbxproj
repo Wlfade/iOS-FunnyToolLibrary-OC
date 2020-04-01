@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A907C7041E20DF7B008A06D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A907C7031E20DF7B008A06D1 /* main.m */; };
+		A907C7071E20DF7B008A06D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A907C7061E20DF7B008A06D1 /* AppDelegate.m */; };
+		A907C70A1E20DF7B008A06D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A907C7091E20DF7B008A06D1 /* ViewController.m */; };
+		A907C70D1E20DF7B008A06D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A907C70B1E20DF7B008A06D1 /* Main.storyboard */; };
+		A907C70F1E20DF7B008A06D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A907C70E1E20DF7B008A06D1 /* Assets.xcassets */; };
+		A907C7121E20DF7B008A06D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A907C7101E20DF7B008A06D1 /* LaunchScreen.storyboard */; };
+		A907C71D1E20DF7B008A06D1 /* FivePointGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A907C71C1E20DF7B008A06D1 /* FivePointGameTests.m */; };
+		A907C7281E20DF7B008A06D1 /* FivePointGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A907C7271E20DF7B008A06D1 /* FivePointGameUITests.m */; };
+		A907C7371E20E311008A06D1 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = A907C7361E20E311008A06D1 /* UIView+Frame.m */; };
+		A907C73E1E20E868008A06D1 /* CheckerboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = A907C73D1E20E868008A06D1 /* CheckerboardView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A907C7191E20DF7B008A06D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A907C6F71E20DF7B008A06D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A907C6FE1E20DF7B008A06D1;
+			remoteInfo = FivePointGame;
+		};
+		A907C7241E20DF7B008A06D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A907C6F71E20DF7B008A06D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A907C6FE1E20DF7B008A06D1;
+			remoteInfo = FivePointGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A907C6FF1E20DF7B008A06D1 /* FivePointGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FivePointGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A907C7031E20DF7B008A06D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A907C7051E20DF7B008A06D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A907C7061E20DF7B008A06D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A907C7081E20DF7B008A06D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A907C7091E20DF7B008A06D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A907C70C1E20DF7B008A06D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A907C70E1E20DF7B008A06D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A907C7111E20DF7B008A06D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A907C7131E20DF7B008A06D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A907C7181E20DF7B008A06D1 /* FivePointGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FivePointGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A907C71C1E20DF7B008A06D1 /* FivePointGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FivePointGameTests.m; sourceTree = "<group>"; };
+		A907C71E1E20DF7B008A06D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A907C7231E20DF7B008A06D1 /* FivePointGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FivePointGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A907C7271E20DF7B008A06D1 /* FivePointGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FivePointGameUITests.m; sourceTree = "<group>"; };
+		A907C7291E20DF7B008A06D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A907C7351E20E311008A06D1 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		A907C7361E20E311008A06D1 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		A907C73C1E20E868008A06D1 /* CheckerboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckerboardView.h; sourceTree = "<group>"; };
+		A907C73D1E20E868008A06D1 /* CheckerboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckerboardView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A907C6FC1E20DF7B008A06D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A907C7151E20DF7B008A06D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A907C7201E20DF7B008A06D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A907C6F61E20DF7B008A06D1 = {
+			isa = PBXGroup;
+			children = (
+				A907C7011E20DF7B008A06D1 /* FivePointGame */,
+				A907C71B1E20DF7B008A06D1 /* FivePointGameTests */,
+				A907C7261E20DF7B008A06D1 /* FivePointGameUITests */,
+				A907C7001E20DF7B008A06D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A907C7001E20DF7B008A06D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A907C6FF1E20DF7B008A06D1 /* FivePointGame.app */,
+				A907C7181E20DF7B008A06D1 /* FivePointGameTests.xctest */,
+				A907C7231E20DF7B008A06D1 /* FivePointGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A907C7011E20DF7B008A06D1 /* FivePointGame */ = {
+			isa = PBXGroup;
+			children = (
+				A907C7351E20E311008A06D1 /* UIView+Frame.h */,
+				A907C7361E20E311008A06D1 /* UIView+Frame.m */,
+				A907C7051E20DF7B008A06D1 /* AppDelegate.h */,
+				A907C7061E20DF7B008A06D1 /* AppDelegate.m */,
+				A907C7081E20DF7B008A06D1 /* ViewController.h */,
+				A907C7091E20DF7B008A06D1 /* ViewController.m */,
+				A907C73C1E20E868008A06D1 /* CheckerboardView.h */,
+				A907C73D1E20E868008A06D1 /* CheckerboardView.m */,
+				A907C70B1E20DF7B008A06D1 /* Main.storyboard */,
+				A907C70E1E20DF7B008A06D1 /* Assets.xcassets */,
+				A907C7101E20DF7B008A06D1 /* LaunchScreen.storyboard */,
+				A907C7131E20DF7B008A06D1 /* Info.plist */,
+				A907C7021E20DF7B008A06D1 /* Supporting Files */,
+			);
+			path = FivePointGame;
+			sourceTree = "<group>";
+		};
+		A907C7021E20DF7B008A06D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A907C7031E20DF7B008A06D1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A907C71B1E20DF7B008A06D1 /* FivePointGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				A907C71C1E20DF7B008A06D1 /* FivePointGameTests.m */,
+				A907C71E1E20DF7B008A06D1 /* Info.plist */,
+			);
+			path = FivePointGameTests;
+			sourceTree = "<group>";
+		};
+		A907C7261E20DF7B008A06D1 /* FivePointGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A907C7271E20DF7B008A06D1 /* FivePointGameUITests.m */,
+				A907C7291E20DF7B008A06D1 /* Info.plist */,
+			);
+			path = FivePointGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A907C6FE1E20DF7B008A06D1 /* FivePointGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A907C72C1E20DF7B008A06D1 /* Build configuration list for PBXNativeTarget "FivePointGame" */;
+			buildPhases = (
+				A907C6FB1E20DF7B008A06D1 /* Sources */,
+				A907C6FC1E20DF7B008A06D1 /* Frameworks */,
+				A907C6FD1E20DF7B008A06D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FivePointGame;
+			productName = FivePointGame;
+			productReference = A907C6FF1E20DF7B008A06D1 /* FivePointGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A907C7171E20DF7B008A06D1 /* FivePointGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A907C72F1E20DF7B008A06D1 /* Build configuration list for PBXNativeTarget "FivePointGameTests" */;
+			buildPhases = (
+				A907C7141E20DF7B008A06D1 /* Sources */,
+				A907C7151E20DF7B008A06D1 /* Frameworks */,
+				A907C7161E20DF7B008A06D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A907C71A1E20DF7B008A06D1 /* PBXTargetDependency */,
+			);
+			name = FivePointGameTests;
+			productName = FivePointGameTests;
+			productReference = A907C7181E20DF7B008A06D1 /* FivePointGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A907C7221E20DF7B008A06D1 /* FivePointGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A907C7321E20DF7B008A06D1 /* Build configuration list for PBXNativeTarget "FivePointGameUITests" */;
+			buildPhases = (
+				A907C71F1E20DF7B008A06D1 /* Sources */,
+				A907C7201E20DF7B008A06D1 /* Frameworks */,
+				A907C7211E20DF7B008A06D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A907C7251E20DF7B008A06D1 /* PBXTargetDependency */,
+			);
+			name = FivePointGameUITests;
+			productName = FivePointGameUITests;
+			productReference = A907C7231E20DF7B008A06D1 /* FivePointGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A907C6F71E20DF7B008A06D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = jczj;
+				TargetAttributes = {
+					A907C6FE1E20DF7B008A06D1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8TXWHGR5K7;
+						ProvisioningStyle = Automatic;
+					};
+					A907C7171E20DF7B008A06D1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A907C6FE1E20DF7B008A06D1;
+					};
+					A907C7221E20DF7B008A06D1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A907C6FE1E20DF7B008A06D1;
+					};
+				};
+			};
+			buildConfigurationList = A907C6FA1E20DF7B008A06D1 /* Build configuration list for PBXProject "FivePointGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A907C6F61E20DF7B008A06D1;
+			productRefGroup = A907C7001E20DF7B008A06D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A907C6FE1E20DF7B008A06D1 /* FivePointGame */,
+				A907C7171E20DF7B008A06D1 /* FivePointGameTests */,
+				A907C7221E20DF7B008A06D1 /* FivePointGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A907C6FD1E20DF7B008A06D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A907C7121E20DF7B008A06D1 /* LaunchScreen.storyboard in Resources */,
+				A907C70F1E20DF7B008A06D1 /* Assets.xcassets in Resources */,
+				A907C70D1E20DF7B008A06D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A907C7161E20DF7B008A06D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A907C7211E20DF7B008A06D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A907C6FB1E20DF7B008A06D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A907C7371E20E311008A06D1 /* UIView+Frame.m in Sources */,
+				A907C73E1E20E868008A06D1 /* CheckerboardView.m in Sources */,
+				A907C70A1E20DF7B008A06D1 /* ViewController.m in Sources */,
+				A907C7071E20DF7B008A06D1 /* AppDelegate.m in Sources */,
+				A907C7041E20DF7B008A06D1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A907C7141E20DF7B008A06D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A907C71D1E20DF7B008A06D1 /* FivePointGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A907C71F1E20DF7B008A06D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A907C7281E20DF7B008A06D1 /* FivePointGameUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A907C71A1E20DF7B008A06D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A907C6FE1E20DF7B008A06D1 /* FivePointGame */;
+			targetProxy = A907C7191E20DF7B008A06D1 /* PBXContainerItemProxy */;
+		};
+		A907C7251E20DF7B008A06D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A907C6FE1E20DF7B008A06D1 /* FivePointGame */;
+			targetProxy = A907C7241E20DF7B008A06D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A907C70B1E20DF7B008A06D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A907C70C1E20DF7B008A06D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A907C7101E20DF7B008A06D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A907C7111E20DF7B008A06D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A907C72A1E20DF7B008A06D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A907C72B1E20DF7B008A06D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A907C72D1E20DF7B008A06D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8TXWHGR5K7;
+				INFOPLIST_FILE = FivePointGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hang.FivePointGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A907C72E1E20DF7B008A06D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8TXWHGR5K7;
+				INFOPLIST_FILE = FivePointGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hang.FivePointGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A907C7301E20DF7B008A06D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FivePointGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hang.FivePointGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FivePointGame.app/FivePointGame";
+			};
+			name = Debug;
+		};
+		A907C7311E20DF7B008A06D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FivePointGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hang.FivePointGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FivePointGame.app/FivePointGame";
+			};
+			name = Release;
+		};
+		A907C7331E20DF7B008A06D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FivePointGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hang.FivePointGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FivePointGame;
+			};
+			name = Debug;
+		};
+		A907C7341E20DF7B008A06D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FivePointGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Hang.FivePointGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FivePointGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A907C6FA1E20DF7B008A06D1 /* Build configuration list for PBXProject "FivePointGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A907C72A1E20DF7B008A06D1 /* Debug */,
+				A907C72B1E20DF7B008A06D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A907C72C1E20DF7B008A06D1 /* Build configuration list for PBXNativeTarget "FivePointGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A907C72D1E20DF7B008A06D1 /* Debug */,
+				A907C72E1E20DF7B008A06D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A907C72F1E20DF7B008A06D1 /* Build configuration list for PBXNativeTarget "FivePointGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A907C7301E20DF7B008A06D1 /* Debug */,
+				A907C7311E20DF7B008A06D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A907C7321E20DF7B008A06D1 /* Build configuration list for PBXNativeTarget "FivePointGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A907C7331E20DF7B008A06D1 /* Debug */,
+				A907C7341E20DF7B008A06D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A907C6F71E20DF7B008A06D1 /* Project object */;
+}

@@ -217,4 +217,38 @@ static NSString * const messageTimer = @"message_hash";
   
   ```
 
+- 写一个属性 计时器
+
+  ```objective-c
+  @property (nonatomic,weak)NSTimer *cheerTimer; //助威头条轮询
+  ```
+
   
+
+ - 计时器点击打开
+
+   ```objective-c
+   -(void)cheerStartTimer
+   {
+       if (!_cheerTimer) {
+           _cheerTimer = [NSTimer scheduledTimerWithTimeInterval:600 target:self selector:@selector(requestCheerHeaderlineData) userInfo:nil repeats:YES] ;
+           [[NSRunLoop mainRunLoop] addTimer:_cheerTimer forMode:NSRunLoopCommonModes] ;
+       }
+   }
+   ```
+
+   
+
+ - 计时器点击关闭
+ ```objective-c
+  -(void)cheerStopTimer
+  {
+      if (self.cheerTimer) {
+          [self.cheerTimer invalidate] ;
+          self.cheerTimer = nil ;
+      }
+  }
+ ```
+
+  
+

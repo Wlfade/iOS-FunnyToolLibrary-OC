@@ -1,0 +1,440 @@
+{\rtf1\ansi\ansicpg936\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset134 PingFangSC-Regular;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red254\green254\blue254;\red135\green135\blue135;
+\red101\green101\blue101;\red239\green239\blue239;\red52\green52\blue52;\red244\green244\blue244;\red172\green75\blue78;
+\red115\green0\blue2;\red117\green117\blue117;\red130\green130\blue130;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs48 \cf2 \cb3 \expnd0\expndtw0\kerning0
+iOS---
+\f1 \'b7\'c0\'d6\'b9
+\f0 UIButton
+\f1 \'d6\'d8\'b8\'b4\'b5\'e3\'bb\'f7\'b5\'c4\'c8\'fd\'d6\'d6\'ca\'b5\'cf\'d6\'b7\'bd\'ca\'bd
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf4 \cb3 \'ca\'b1\'bc\'e4
+\f0 \'a02016-06-29 13:45:12 {\field{\*\fldinst{HYPERLINK "http://www.tuicool.com/sites/eIryyaf"}}{\fldrslt \cf2 Chris Hu
+\f1 \'b5\'c4\'bc\'bc\'ca\'f5\'b2\'a9\'bf\'cd}}\cb1 \
+
+\f1 \cb3 \'d4\'ad\'ce\'c4
+\f0 \cb1 \
+\cb3 \'a0 {\field{\*\fldinst{HYPERLINK "http://icetime17.github.io/2016/06/29/2016-06/iOS-%E9%98%B2%E6%AD%A2UIButton%E9%87%8D%E5%A4%8D%E7%82%B9%E5%87%BB%E7%9A%84%E4%B8%89%E7%A7%8D%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F/?utm_source=tuicool&utm_medium=referral"}}{\fldrslt \cf2 http://icetime17.github.io/2016/06/29/2016-06/iOS-
+\f1 \'b7\'c0\'d6\'b9
+\f0 UIButton
+\f1 \'d6\'d8\'b8\'b4\'b5\'e3\'bb\'f7\'b5\'c4\'c8\'fd\'d6\'d6\'ca\'b5\'cf\'d6\'b7\'bd\'ca\'bd
+\f0 /}}\cb1 \
+
+\f1 \cb3 \'d6\'f7\'cc\'e2
+\f0  {\field{\*\fldinst{HYPERLINK "http://www.tuicool.com/topics/11350072"}}{\fldrslt 
+\fs25\fsmilli12600 \cf5 \cb6 UIButton}}\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs32 \cf2 \cb3 \'cd\'a8\'b3\'a3
+\f0 , 
+\f1 \'ce\'d2\'c3\'c7\'bb\'e1\'b2\'c9\'d3\'c3\'c8\'e7\'cf\'c2\'b5\'c4\'d2\'bb\'d0\'a9\'b4\'eb\'ca\'a9\'c0\'b4\'b7\'c0\'d6\'b9\'d6\'d8\'b8\'b4\'b5\'e3\'bb\'f7
+\f0 UIButton:\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 \cb3 \'ca\'b9\'d3\'c3
+\f0 UIButton
+\f1 \'b5\'c4
+\f0 enabled
+\f1 \'bb\'f2
+\f0 userInteractionEnabled\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs32 \cf2 \cb3 \'ca\'b9\'d3\'c3
+\f0 UIButton
+\f1 \'b5\'c4
+\f0 enabled
+\f1 \'ca\'f4\'d0\'d4
+\f0 , 
+\f1 \'d4\'da\'b5\'e3\'bb\'f7\'ba\'f3
+\f0 , 
+\f1 \'bd\'fb\'d6\'b9
+\f0 UIButton
+\f1 \'b5\'c4\'bd\'bb\'bb\'a5
+\f0 , 
+\f1 \'d6\'b1\'b5\'bd\'cd\'ea\'b3\'c9\'d6\'b8\'b6\'a8\'c8\'ce\'ce\'f1\'d6\'ae\'ba\'f3\'d4\'d9\'bd\'ab\'c6\'e4
+\f0 enable
+\f1 \'bc\'b4\'bf\'c9
+\f0 .\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs28 \cf7 \cb8 [btn \cf9 addTarget:
+\f3\b \cf2 self
+\f2\b0 \cf7  \cf9 action:\cf7 @selector(\cf9 actionFixMultiClick_enabled:\cf7 ) \cf9 forControlEvents:\cf7 UIControlEventTouchUpInside];\cb1 \
+\
+\cf9 \cb8 //\cf7  xxx\cb1 \
+\
+\cb8 - (void)\cf9 actionFixMultiClick_enabled:\cf7 (UIButton *)sender \{\cb1 \
+\cb8     sender.enabled = NO;\cb1 \
+\cb8     [
+\f3\b \cf2 self
+\f2\b0 \cf7  btnClickedOperations];\cb1 \
+\cb8 \}\cb1 \
+\
+\cb8 - (void)btnClickedOperations \{\cb1 \
+\cb8     
+\f3\b \cf2 self
+\f2\b0 \cf7 .view.backgroundColor = [UIColor \cf9 colorWithRed:\cf7 ((arc4random() % \cf10 255\cf7 ) / \cf10 255.0\cf7 )\cb1 \
+\cb8                                                 \cf9 green:\cf7 ((arc4random() % \cf10 255\cf7 ) / \cf10 255.0\cf7 )\cb1 \
+\cb8                                                  \cf9 blue:\cf7 ((arc4random() % \cf10 255\cf7 ) / \cf10 255.0\cf7 )\cb1 \
+\cb8                                                 \cf9 alpha:\cf10 1.0\cf7 f];\cb1 \
+\
+\cb8     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(\cf10 1\cf7  * NSEC_PER_SEC)), dispatch_get_main_queue(), ^\{\cb1 \
+\cb8         NSLog(@\cf10 "btnClickedOperations"\cf7 );\cb1 \
+\cb8         btn.enabled = YES;\cb1 \
+\cb8     \});\cb1 \
+\cb8 \}\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 \cb3 \'ca\'b9\'d3\'c3
+\f0 performSelector:withObject:afterDelay:
+\f1 \'ba\'cd
+\f0 cancelPreviousPerformRequestsWithTarget\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs32 \cf2 \cb3 \'ca\'b9\'d3\'c3\'d5\'e2\'d6\'d6\'b7\'bd\'ca\'bd
+\f0 , 
+\f1 \'bb\'e1\'d4\'da\'c1\'ac\'d0\'f8\'d6\'d8\'b8\'b4\'b5\'e3\'bb\'f7
+\f0 UIButton
+\f1 \'b5\'c4\'ca\'b1\'ba\'f2
+\f0 , 
+\f1 \'d7\'d4\'b6\'af\'c8\'a1\'cf\'fb\'b5\'f4\'d6\'ae\'c7\'b0\'b5\'c4\'b2\'d9\'d7\'f7
+\f0 , 
+\f1 \'d1\'d3\'ca\'b1
+\f0 1s
+\f1 \'ba\'f3\'d6\'b4\'d0\'d0\'ca\'b5\'bc\'ca\'b5\'c4\'b2\'d9\'d7\'f7
+\f0 .\cb1 \
+
+\f1 \cb3 \'d5\'e2\'d1\'f9
+\f0 , 
+\f1 \'bf\'b4\'c6\'f0\'c0\'b4\'bb\'e1\'b1\'c8\'b5\'da\'d2\'bb\'d6\'d6\'ba\'cd\'b5\'da\'c8\'fd\'d6\'d6\'c9\'d4\'ce\'a2\'d1\'d3\'b3\'d9\'d6\'b4\'d0\'d0\'ca\'b5\'bc\'ca\'b5\'c4\'b2\'d9\'d7\'f7
+\f0 .\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs28 \cf7 \cb8 [
+\f3\b \cf2 btn
+\f2\b0 \cf7  addTarget:self action:@selector(
+\f3\b \cf2 actionFixMultiClick_performSelector:
+\f2\b0 \cf7 ) for\cb1 \
+\
+\cb8 // xxx\cb1 \
+\
+\cb8 - (
+\f3\b \cf2 void
+\f2\b0 \cf7 )actionFixMultiClick_performSelector:(
+\f3\b \cf2 UIButton
+\f2\b0 \cf7  *)sender \{\cb1 \
+\cb8     [
+\f3\b \cf2 NSObject
+\f2\b0 \cf7  cancelPreviousPerformRequestsWithTarget:self selector:@selector(
+\f3\b \cf2 btnClickedOperations
+\f2\b0 \cf7 ) object:nil]\cf11 ;\cf7 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb8     [self performSelector:@selector(btnClickedOperations) withObject:nil afterDelay:1];\cf7 \cb1 \
+\cf11 \cb8 \}\cf7 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 \cb3 \'ca\'b9\'d3\'c3
+\f0 runtime
+\f1 \'c0\'b4\'b6\'d4
+\f0 sendAction:to:forEvent:
+\f1 \'b7\'bd\'b7\'a8\'bd\'f8\'d0\'d0
+\f0 hook\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\b0\fs32 \cf2 \cb3 UIControl
+\f1 \'b5\'c4
+\f0 sendAction:to:forEvent:
+\f1 \'b7\'bd\'b7\'a8\'d3\'c3\'d3\'da\'b4\'a6\'c0\'ed\'ca\'c2\'bc\'fe\'cf\'ec\'d3\'a6
+\f0 .
+\f1 \'c8\'e7\'b9\'fb\'ce\'d2\'c3\'c7\'d4\'da\'b8\'c3\'b7\'bd\'b7\'a8\'b5\'c4\'ca\'b5\'cf\'d6\'d6\'d0
+\f0 , 
+\f1 \'cc\'ed\'bc\'d3\'d5\'eb\'b6\'d4\'b5\'e3\'bb\'f7\'ca\'c2\'bc\'fe\'b5\'c4\'ca\'b1\'bc\'e4\'bc\'e4\'b8\'f4\'cf\'e0\'b9\'d8\'b5\'c4\'b4\'a6\'c0\'ed\'b4\'fa\'c2\'eb
+\f0 , 
+\f1 \'d4\'f2\'c4\'dc\'b9\'bb\'d7\'f6\'b5\'bd\'d4\'da\'d6\'b8\'b6\'a8\'ca\'b1\'bc\'e4\'bc\'e4\'b8\'f4\'d6\'d0\'b7\'c0\'d6\'b9\'d6\'d8\'b8\'b4\'b5\'e3\'bb\'f7
+\f0 .\cb1 \
+
+\f1 \cb3 \'ca\'d7\'cf\'c8
+\f0 , 
+\f1 \'ce\'aa
+\f0 UIButton
+\f1 \'cc\'ed\'bc\'d3\'d2\'bb\'b8\'f6
+\f0 Category:\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs28 \cf9 \cb8 @interface\cf7  UIButton (CS_FixMultiClick)\cb1 \
+\
+\cf9 \cb8 @property\cf7  (nonatomic, assign) NSTimeInterval cs_acceptEventInterval; \cf11 // 
+\f1 \'d6\'d8\'b8\'b4\'b5\'e3\'bb\'f7\'b5\'c4\'bc\'e4\'b8\'f4
+\f2 \cf7 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf11 \cb8 @property (nonatomic, assign) NSTimeInterval cs_acceptEventTime;\cf7 \cb1 \
+\
+\cf11 \cb8 @end\cf7 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf2 \cb3 Category
+\f1 \'b2\'bb\'c4\'dc\'b8\'f8\'c0\'e0\'cc\'ed\'bc\'d3\'ca\'f4\'d0\'d4
+\f0 , 
+\f1 \'cb\'f9\'d2\'d4\'d2\'d4\'c9\'cf\'b5\'c4
+\f0 cs_acceptEventInterval
+\f1 \'ba\'cd
+\f0 cs_acceptEventTime
+\f1 \'d6\'bb\'bb\'e1\'d3\'d0\'b6\'d4\'d3\'a6\'b5\'c4
+\f0 getter
+\f1 \'ba\'cd
+\f0 setter
+\f1 \'b7\'bd\'b7\'a8
+\f0 , 
+\f1 \'b2\'bb\'bb\'e1\'cc\'ed\'bc\'d3\'d5\'e6\'d5\'fd\'b5\'c4\'b3\'c9\'d4\'b1\'b1\'e4\'c1\'bf
+\f0 .\cb1 \
+
+\f1 \cb3 \'c8\'e7\'b9\'fb\'ce\'d2\'c3\'c7\'b2\'bb\'d4\'da\'ca\'b5\'cf\'d6\'ce\'c4\'bc\'fe\'d6\'d0\'cc\'ed\'bc\'d3\'c6\'e4
+\f0 getter
+\f1 \'ba\'cd
+\f0 setter
+\f1 \'b7\'bd\'b7\'a8
+\f0 , 
+\f1 \'d4\'f2\'b2\'c9\'d3\'c3
+\f0  
+\i\b btn.cs_acceptEventInterval = 1;
+\i0  
+\f1\b0 \'d5\'e2\'d6\'d6\'b7\'bd\'b7\'a8\'b3\'a2\'ca\'d4\'b7\'c3\'ce\'ca\'b8\'c3\'ca\'f4\'d0\'d4\'bb\'e1\'b3\'f6\'b4\'ed
+\f0 .\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\b\fs28 \cf2 \cb8 2016-06-29
+\f2\b0 \cf7  
+\f3\b \cf2 14
+\f2\b0 \cf9 :04:52.538\cf7  
+\f3\b \cf2 DemoRuntime
+\f2\b0 \cf9 [17380:1387981]\cf7  
+\f3\b \cf2 -
+\f2\b0 \cf9 [UIButton setCs_acceptEventInterval:]\cf7 : 
+\f3\b \cf2 unrecognized
+\f2\b0 \cf7  
+\f3\b \cf2 selector
+\f2\b0 \cf7  
+\f3\b \cf2 sent
+\f2\b0 \cf7  
+\f3\b \cf2 to
+\f2\b0 \cf7  
+\f3\b \cf2 instance
+\f2\b0 \cf7  
+\f3\b \cf2 0x7fe8e154e470
+\f2\b0 \cf7 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs32 \cf2 \cb3 \'d4\'da\'ca\'b5\'cf\'d6\'ce\'c4\'bc\'fe\'d6\'d0\'cd\'a8\'b9\'fd
+\f0 runtime
+\f1 \'b5\'c4\'b9\'d8\'c1\'aa\'b6\'d4\'cf\'f3\'b5\'c4\'b7\'bd\'ca\'bd
+\f0 , 
+\f1 \'ce\'aa
+\f0 UIButton
+\f1 \'cc\'ed\'bc\'d3\'d2\'d4\'c9\'cf\'c1\'bd\'b8\'f6\'ca\'f4\'d0\'d4
+\f0 . 
+\f1 \'b4\'fa\'c2\'eb\'c8\'e7\'cf\'c2
+\f0 :\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs28 \cf9 \cb8 #import\cf7  \cf11 "UIControl+CS_FixMultiClick.h"\cf7 \cb1 \
+\cf9 \cb8 #import\cf7  <objc/runtime.h>\cb1 \
+\
+\cb8 @implementation \cf10 UIButton\cf7  (\cf10 CS_FixMultiClick\cf7 )\cb1 \
+\
+\cb8 // 
+\f1 \'d2\'f2
+\f2 category
+\f1 \'b2\'bb\'c4\'dc\'cc\'ed\'bc\'d3\'ca\'f4\'d0\'d4\'a3\'ac\'d6\'bb\'c4\'dc\'cd\'a8\'b9\'fd\'b9\'d8\'c1\'aa\'b6\'d4\'cf\'f3\'b5\'c4\'b7\'bd\'ca\'bd\'a1\'a3
+\f2 \cb1 \
+\cb8 static const char *\cf10 UIControl_acceptEventInterval\cf7  = \cf11 "UIControl_acceptEventInterval"\cf7 ;\cb1 \
+\
+\cb8 - (\cf10 NSTimeInterval\cf7 )cs_acceptEventInterval \{\cb1 \
+\cb8     return  [objc_getAssociatedObject(
+\f3\b \cf2 self
+\f2\b0 \cf7 , \cf10 UIControl_acceptEventInterval\cf7 ) doubleValue];\cb1 \
+\cb8 \}\cb1 \
+\
+\cb8 - (void)setCs_acceptEventInterval:(\cf10 NSTimeInterval\cf7 )cs_acceptEventInterval \{\cb1 \
+\cb8     objc_setAssociatedObject(
+\f3\b \cf2 self
+\f2\b0 \cf7 , \cf10 UIControl_acceptEventInterval\cf7 , @(cs_acceptEventInterval), \cf10 OBJC_ASSOCIATION_RETAIN_NONATOMIC\cf7 );\cb1 \
+\cb8 \}\cb1 \
+\
+\cb8 static const char *\cf10 UIControl_acceptEventTime\cf7  = \cf11 "UIControl_acceptEventTime"\cf7 ;\cb1 \
+\
+\cb8 - (\cf10 NSTimeInterval\cf7 )cs_acceptEventTime \{\cb1 \
+\cb8     return  [objc_getAssociatedObject(
+\f3\b \cf2 self
+\f2\b0 \cf7 , \cf10 UIControl_acceptEventTime\cf7 ) doubleValue];\cb1 \
+\cb8 \}\cb1 \
+\
+\cb8 - (void)setCs_acceptEventTime:(\cf10 NSTimeInterval\cf7 )cs_acceptEventTime \{\cb1 \
+\cb8     objc_setAssociatedObject(
+\f3\b \cf2 self
+\f2\b0 \cf7 , \cf10 UIControl_acceptEventTime\cf7 , @(cs_acceptEventTime), \cf10 OBJC_ASSOCIATION_RETAIN_NONATOMIC\cf7 );\cb1 \
+\cb8 \}\cb1 \
+\
+\
+\cb8 // 
+\f1 \'d4\'da
+\f2 load
+\f1 \'ca\'b1\'d6\'b4\'d0\'d0
+\f2 hook\cb1 \
+\cb8 + (void)load \{\cb1 \
+\cb8     \cf10 Method\cf7  before   = class_getInstanceMethod(
+\f3\b \cf2 self
+\f2\b0 \cf7 , @selector(sendAction:to:forEvent:));\cb1 \
+\cb8     \cf10 Method\cf7  after    = class_getInstanceMethod(
+\f3\b \cf2 self
+\f2\b0 \cf7 , @selector(cs_sendAction:to:forEvent:));\cb1 \
+\cb8     method_exchangeImplementations(before, after);\cb1 \
+\cb8 \}\cb1 \
+\
+\cb8 - (void)cs_sendAction:(\cf10 SEL\cf7 )action to:(id)target forEvent:(\cf10 UIEvent\cf7  *)event \{\cb1 \
+\cb8     if ([\cf10 NSDate\cf7  date].timeIntervalSince1970 - 
+\f3\b \cf2 self
+\f2\b0 \cf7 .cs_acceptEventTime < 
+\f3\b \cf2 self
+\f2\b0 \cf7 .cs_acceptEventInterval) \{\cb1 \
+\cb8         return;\cb1 \
+\cb8     \}\cb1 \
+\
+\cb8     if (
+\f3\b \cf2 self
+\f2\b0 \cf7 .cs_acceptEventInterval > \cf10 0\cf7 ) \{\cb1 \
+\cb8         
+\f3\b \cf2 self
+\f2\b0 \cf7 .cs_acceptEventTime = [\cf10 NSDate\cf7  date].timeIntervalSince1970;\cb1 \
+\cb8     \}\cb1 \
+\
+\cb8     [
+\f3\b \cf2 self
+\f2\b0 \cf7  cs_sendAction:action to:target forEvent:event];\cb1 \
+\cb8 \}\cb1 \
+\
+\cb8 @end\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf2 \cb3 load
+\f1 \'b7\'bd\'b7\'a8\'ca\'c7\'d4\'da
+\f0 objc
+\f1 \'bf\'e2\'d6\'d0\'b5\'c4\'d2\'bb\'b8\'f6
+\f0 load_images
+\f1 \'ba\'af\'ca\'fd\'d6\'d0\'b5\'f7\'d3\'c3\'b5\'c4
+\f0 . 
+\f1 \'cf\'c8\'b0\'d1\'b6\'fe\'bd\'f8\'d6\'c6\'d3\'b3\'cf\'f1\'ce\'c4\'bc\'fe\'d6\'d0\'b5\'c4\'cd\'b7\'d0\'c5\'cf\'a2\'c8\'a1\'b3\'f6
+\f0 , 
+\f1 \'d4\'d9\'bd\'e2\'ce\'f6\'ba\'cd\'b6\'c1\'b3\'f6\'b8\'f7\'b8\'f6\'c4\'a3\'bf\'e9\'d6\'d0\'b5\'c4\'c0\'e0\'b6\'a8\'d2\'e5\'d0\'c5\'cf\'a2
+\f0 , 
+\f1 \'b0\'d1\'ca\'b5\'cf\'d6\'c1\'cb
+\f0 load
+\f1 \'b7\'bd\'b7\'a8\'b5\'c4\'c0\'e0\'ba\'cd
+\f0 Category
+\f1 \'bc\'c7\'c2\'bc\'cf\'c2\'c0\'b4
+\f0 , 
+\f1 \'d7\'ee\'ba\'f3\'cd\'b3\'d2\'bb\'d6\'b4\'d0\'d0\'b5\'f7\'d3\'c3
+\f0 . 
+\f1 \'d6\'f7\'c0\'e0\'d6\'d0\'b5\'c4
+\f0 load
+\f1 \'b7\'bd\'b7\'a8\'b5\'c4\'b5\'f7\'d3\'c3\'ca\'b1\'bb\'fa\'d2\'aa\'d4\'e7\'d3\'da
+\f0 Category
+\f1 \'d6\'d0\'b5\'c4
+\f0 load
+\f1 \'b7\'bd\'b7\'a8
+\f0 .\cb1 \
+
+\f1 \cb3 \'b9\'d8\'d3\'da
+\f0 load
+\f1 \'ba\'cd
+\f0 initialize
+\f1 \'b7\'bd\'b7\'a8
+\f0 , 
+\f1 \'bf\'c9\'b2\'ce\'bf\'b4\'b2\'a9\'bf\'cd
+\f0  {\field{\*\fldinst{HYPERLINK "http://www.cocoachina.com/ios/20150104/10826.html"}}{\fldrslt 
+\i\b \cf12 NSObject
+\f1\i0 \'b5\'c4
+\f0\i load
+\f1\i0 \'ba\'cd
+\f0\i initialize
+\f1\i0 \'b7\'bd\'b7\'a8}} .\cb1 \
+
+\f1 \cb3 \'d2\'f2\'b4\'cb
+\f0 , 
+\f1 \'ce\'d2\'c3\'c7\'d4\'da
+\f0 Category
+\f1 \'d6\'d0\'b5\'c4
+\f0 load
+\f1 \'b7\'bd\'b7\'a8\'d6\'d0
+\f0 , 
+\f1 \'d6\'b4\'d0\'d0
+\f0 runtime
+\f1 \'b5\'c4
+\f0 method swizzling, 
+\f1 \'bc\'b4\'bf\'c9\'bd\'ab
+\f0 UIButton
+\f1 \'b5\'c4\'ca\'c2\'bc\'fe\'cf\'ec\'d3\'a6\'b7\'bd\'b7\'a8
+\f0 sendAction:to:forEvent:
+\f1 \'cc\'e6\'bb\'bb\'ce\'aa\'ce\'d2\'c3\'c7\'d7\'d4\'b6\'a8\'d2\'e5\'b5\'c4\'b7\'bd\'b7\'a8
+\f0 cs_sendAction:to:forEvent:.\cb1 \
+
+\f1 \cb3 \'b9\'d8\'d3\'da
+\f0 runtime
+\f1 \'b5\'c4\'b9\'d8\'c1\'aa\'b6\'d4\'cf\'f3\'ba\'cd
+\f0 method swizzling, 
+\f1 \'d5\'e2\'c0\'ef\'be\'cd\'b2\'bb\'b6\'e0\'d7\'f6\'bd\'e9\'c9\'dc\'c1\'cb
+\f0 , 
+\f1 \'bf\'c9\'b2\'ce\'bf\'bc\'b2\'a9\'bf\'cd
+\f0  {\field{\*\fldinst{HYPERLINK "http://blog.csdn.net/icetime17/article/details/51176093"}}{\fldrslt 
+\i\b \cf12 iOS \'97 
+\f1\i0 \'c0\'ed\'bd\'e2
+\f0\i Runtime
+\f1\i0 \'bb\'fa\'d6\'c6\'bc\'b0\'c6\'e4\'ca\'b9\'d3\'c3\'b3\'a1\'be\'b0}} .\cb1 \
+
+\f1 \cb3 \'c4\'c7\'c3\'b4
+\f0 , 
+\f1 \'c8\'e7\'ba\'ce\'ca\'b9\'d3\'c3\'c4\'d8
+\f0 ?\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs28 \cf7 \cb8 btn.cs_acceptEventInterval = 1;\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs32 \cf2 \cb3 \'d5\'e2\'d1\'f9
+\f0 , 
+\f1 \'be\'cd\'b8\'f8
+\f0 UIButton
+\f1 \'d6\'b8\'b6\'a8\'c1\'cb
+\f0 1s
+\f1 \'b5\'c4\'ca\'b1\'bc\'e4\'bc\'e4\'b8\'f4\'d3\'c3\'d3\'da\'b7\'c0\'d6\'b9\'d6\'d8\'b8\'b4\'b5\'e3\'bb\'f7
+\f0 .\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b\fs36 \cf2 \cb3 \'d7\'dc\'bd\'e1
+\f0 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\b0\fs32 \cf2 \cb3 \'c8\'fd\'d6\'d6\'b7\'bd\'ca\'bd\'d6\'d0\'cd\'c6\'bc\'f6\'ca\'b9\'d3\'c3
+\f0 runtime
+\f1 \'b7\'bd\'ca\'bd
+\f0 , 
+\f1 \'d5\'e2\'d1\'f9\'bf\'c9\'d2\'d4\'ce\'aa\'cb\'f9\'d3\'d0\'b5\'c4
+\f0 UIButton
+\f1 \'cd\'ac\'ca\'b1\'cc\'ed\'bc\'d3
+\f0 .\cb1 \
+
+\f1 \cb3 \'d3\'d0\'d0\'a9\'b3\'a1\'be\'b0\'cf\'c2
+\f0 , 
+\f1 \'bf\'c9\'d2\'d4\'bf\'bc\'c2\'c7\'ca\'b9\'d3\'c3\'b5\'da\'b6\'fe\'d6\'d6\'b7\'bd\'ca\'bd
+\f0 , 
+\f1 \'d7\'d4\'b6\'af\'d1\'d3\'b3\'d9\'ba\'f3\'d2\'d4\'d7\'ee\'d6\'d5\'b5\'c4\'d2\'bb\'b4\'ce\'b5\'e3\'bb\'f7\'ca\'c2\'bc\'fe\'ce\'aa\'d7\'bc\'d6\'b4\'d0\'d0\'ca\'b5\'bc\'ca\'b2\'d9\'d7\'f7
+\f0 .}
